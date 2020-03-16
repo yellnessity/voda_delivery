@@ -1,0 +1,273 @@
+header {
+  height: 120px;
+  margin: 0 100px;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 114px;
+  height: 65px;
+}
+
+.nav-items-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.nav-item  a:hover {
+  color: #0494B4;
+}
+
+.cart {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart img  {
+  width: 65px;
+  height: 77px;
+}
+
+.promo-banner {
+  margin: 20px 50px 50px 50px;
+  height: 540px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px;
+  background-image: url("img/banner-background.png");
+  background-size: cover;
+  position: relative;
+}
+
+.promo-banner img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: 0;
+}
+
+.banner-content {
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+  z-index: 10;
+}
+
+.banner-title {
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 30px 0;
+}
+
+.banner-button {
+  width: 350px;
+  height: 70px;
+  font-size: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.banner-button:hover {
+  background-color: #0494B4;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin: 0 100px;
+  display: flex;
+  flex-direction:row;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.description-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+.description-nav li {
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.description-text {
+  width: 700px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.description-text text {
+  padding: 10px 0;
+}
+
+.description img {
+  margin: 0 auto;
+}
+
+.services {
+  margin: 0 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.services h2, .offers h2 {
+  font-size: 48px;
+  color: #0494B4;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-block {
+  width: 300px;
+  position: relative;
+}
+
+.services-title-wrapper {
+  height: 200px;
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.services-title-wrapper:before {
+  content: "01";
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  font-size: 200px;
+  left: 0;
+  color: #E7FBFF;
+}
+
+.service-title {
+  width: 180px;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.service-text {
+  font-size: 20px;
+  margin-top: 30px;
+  display: block;
+}
+
+.offers {
+  background-color: #E7FBFF;
+  padding-top: 40px;
+  border-bottom: 50px solid #E7FBFF;
+  border-image: url(img/offers-border.png) 50;
+}
+
+.offers-wrapper {
+  margin-left: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.offers h2 {
+  margin: 30px 100px;
+}
+
+.offers-block {
+  width: 375px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0;
+  margin-right: 30px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.offers-block img {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offers-text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.offers-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.offers-text {
+  padding: 30px 0;
+}
+
+.offers-additional text {
+  color: #0494B4;
+}
+
+.questions {
+  display: flex;
+  flex-direction: row;
+}
+
+.
