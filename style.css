@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Muller; /* Имя шрифта */
+    src: url(font/MullerRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: MullerBold; /* Имя шрифта */
+    src: url(font/MullerBold.ttf); /* Путь к файлу со шрифтом */
+    }
+
+@font-face {
+    font-family: MullerExtraBold; /* Имя шрифта */
+    src: url(font/MullerExtraBold.ttf); /* Путь к файлу со шрифтом */
+    }
+
+
 header {
   height: 120px;
   margin: 0 100px;
@@ -7,7 +23,7 @@ header {
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: Muller;
 }
 
 a {
@@ -89,7 +105,7 @@ a {
 .banner-title {
   width: 100%;
   font-size: 60px;
-  font-weight: bold;
+  font-family: MullerBold;
 }
 
 .banner-description {
@@ -139,7 +155,12 @@ a {
 
 .description-nav li {
   margin-right: 30px;
-  font-size: 30px;
+  font-size: 40px;
+  color: #c4c4c4;
+}
+
+.description-nav li:hover {
+  color: #0494B4;
 }
 
 .description-text {
@@ -190,7 +211,7 @@ a {
 
 .services-title-wrapper:before {
   content: "01";
-  font-weight: bold;
+  font-family: MullerExtraBold;
   font-style: italic;
   position: absolute;
   font-size: 200px;
@@ -198,10 +219,21 @@ a {
   color: #E7FBFF;
 }
 
+.services-block:nth-child(2) .services-title-wrapper:before {
+  content: "02";
+}
+
+.services-block:last-child .services-title-wrapper:before {
+  content: "03";
+}
+
 .service-title {
   width: 180px;
   z-index: 10;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: MullerBold;
+  color: #0494B4;
+  text-align: right;
 }
 
 .service-text {
@@ -254,7 +286,7 @@ a {
 
 .offers-title {
   font-size: 24px;
-  font-weight: 500;
+  font-family: MullerBold;
 }
 
 .offers-text {
@@ -268,6 +300,94 @@ a {
 .questions {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px 0;
 }
 
-.
+.questions-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions h2 {
+  font-size: 36px;
+}
+
+.questions-form {
+  height: 100%;
+    border-radius: 30px;
+    background-color: #E7FBFF;
+    margin-top: 20px;
+}
+
+.banner-low {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  background-image: url(img/banner-lower-background.png);
+  background-size: cover;
+  background-color: #E7FBFF;
+  justify-content: space-around;
+}
+
+.banner-low-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.banner-low-title {
+  font-size: 36px;
+  font-family: MullerBold;
+}
+
+.banner-low-text {
+  font-size: 24px;
+}
+
+.banner-low-button {
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 50px;
+  border: 0;
+  margin-top: 20px;
+  background-color: white;
+  font-family: Muller;
+}
+
+.banner-low-button:hover {
+
+  background-color: #0494B4;
+}
+
+footer {
+  background-color: #0494B4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer-logo, .footer-nav, .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  justify-content: flex-start;
+  color: white;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+footer text, footer a {
+  padding: 10px 0;
+}
+
+.footer-titles {
+  font-size: 25px;
+}
